@@ -1,16 +1,11 @@
 package edu.upc.utils;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class DbUtils {
 private  static  final  String URL="jdbc:mysql://localhost:3306/familyfinancesystem?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC";
 private static  final  String USERNAME="root";
-private  static  final  String  PASSWORD="";
+	private static final String PASSWORD = "123456";
 
 private  DbUtils(){}
 

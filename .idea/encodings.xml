@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/edu/upc/controller/GetSOIbySOI_idServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/edu/upc/controller/GetSSIbySSI_idServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/edu/upc/controller/GetSharebyIdServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/edu/upc/controller/GetSharebyIdServlet2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/edu/upc/controller/InsertSOIServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/edu/upc/controller/InsertSSIServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/edu/upc/controller/InsertShareServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/edu/upc/controller/UpdateSOIServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/edu/upc/controller/UpdateSSIServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/edu/upc/controller/UpdateShareServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/edu/upc/dao/SOIDaoImpl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/edu/upc/dao/SSIDaoImpl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/edu/upc/dao/ShareAccountInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/edu/upc/dao/ShareAccountInfoDaoImpl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/edu/upc/dao/ShareOwnedInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/edu/upc/dao/ShareStreamInfo.java" charset="GBK" />
+  </component>
+</project>
