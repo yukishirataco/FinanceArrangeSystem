@@ -10,10 +10,11 @@
     <meta charset="UTF-8">
     <title>查询结果</title>
 </head>
-<body>
+<body text="white">
 <style>
     body {
-        background-color: #dce2de;
+        background-color: #494a5f;
+        color: white;
     }
 </style>
 <center><h1>查询结果</h1></center>
@@ -36,12 +37,12 @@
     <c:if test="${SSIids!=null }">
         <c:forEach items="${SSIids }" var="item">
             <tr>
-                <td>${item.sharestream_id }</td>
-                <td>${item.sharestream_no }</td>
-                <td>${item.sharestream_name }</td>
-                <td>${item.sharestream_in }</td>
-                <td>${item.sharestream_out }</td>
-                <td>${item.sharestream_date }</td>
+                <td><font color="white">${item.sharestream_id }</font></td>
+                <td><font color="white">${item.sharestream_no }</font></td>
+                <td><font color="white">${item.sharestream_name }</font></td>
+                <td><font color="white">${item.sharestream_in }</font></td>
+                <td><font color="white">${item.sharestream_out }</font></td>
+                <td><font color="white">${item.sharestream_date }</font></td>
             </tr>
         </c:forEach>
     </c:if>

@@ -11,10 +11,11 @@
     <title>修改用户密码</title>
     <script type="text/javascript" src="${pageContext.request.contextPath }/js/constraint.js"></script>
 </head>
-<body>
+<body text="white">
 <style>
     body {
-        background-color: #dce2de;
+        background-color: #494a5f;
+        color: white;
     }
 </style>
 <center>

@@ -3,10 +3,11 @@
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
-<body>
+<body text="white">
 <style>
     body {
-        background-color: #dce2de;
+        background-color: #494a5f;
+        color: white;
     }
 </style>
 <center>

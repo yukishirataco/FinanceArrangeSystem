@@ -4,17 +4,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
+    <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
+    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Insert title here</title>
     <script type="text/javascript" src="${pageContext.request.contextPath }/js/del.js"></script>
 </head>
-<body>
+<body text="white">
 <style>
     body {
-        background-color: #dce2de;
+        background-color: #494a5f;
+        color: white;
     }
 </style>
 <form>
@@ -51,12 +52,12 @@
         <c:if test="${SSIs!=null }">
             <c:forEach items="${SSIs }" var="item">
                 <tr>
-                    <td>${item.sharestream_id }</td>
-                    <td>${item.sharestream_no }</td>
-                    <td>${item.sharestream_name }</td>
-                    <td>${item.sharestream_in }</td>
-                    <td>${item.sharestream_out }</td>
-                    <td>${item.sharestream_date }</td>
+                    <td><font color="white">${item.sharestream_id }</font></td>
+                    <td><font color="white">${item.sharestream_no }</font></td>
+                    <td><font color="white">${item.sharestream_name }</font></td>
+                    <td><font color="white">${item.sharestream_in }</font></td>
+                    <td><font color="white">${item.sharestream_out }</font></td>
+                    <td><font color="white">${item.sharestream_date }</font></td>
                     <td>
                         <a role="button" class="btn btn-success"
                            href="${pageContext.request.contextPath }/GetSSIbyidnoServlet?sharestream_id=${item.sharestream_id}&sharestream_no=${item.sharestream_no}">修改</a>

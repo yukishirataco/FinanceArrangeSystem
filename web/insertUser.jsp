@@ -10,10 +10,11 @@
     <meta charset="UTF-8">
     <title>Insert title here</title>
 </head>
-<body>
+<body text="white">
 <style>
     body {
-        background-color: #dce2de;
+        color: white;
+        background-color: #494a5f;
     }
 </style>
 <form action="${pageContext.request.contextPath }/AdminInsertUserServlet" method="post">

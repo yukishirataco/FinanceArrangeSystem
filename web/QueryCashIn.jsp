@@ -45,10 +45,11 @@
     }
 
 </script>
-<body>
+<body text="white">
 <style>
     body {
-        background-color: #dce2de;
+        background-color: #494a5f;
+        color: white;
     }
 </style>
 <br>
@@ -83,13 +84,13 @@
         ResultSet rs =pstmt.executeQuery();
         while(rs.next()){
             out.print("<tr>");
-            out.print("<td>"+rs.getInt("cashin_id")+"</td>");
-            out.print("<td>"+rs.getInt("cashin_cash")+"</td>");
-            out.print("<td>"+rs.getString("cashin_type")+"</td>");
-            out.print("<td>"+rs.getString("cashin_person")+"</td>");
-            out.print("<td>"+rs.getString("cashin_date")+"</td>");
-            out.print("<td>"+rs.getString("cashin_source")+"</td>");
-            out.print("<td>"+rs.getString("cashin_note")+"</td>");
+            out.print("<td><font color=\"white\">"+rs.getInt("cashin_id")+"</td>");
+            out.print("<td><font color=\"white\">"+rs.getInt("cashin_cash")+"</td>");
+            out.print("<td><font color=\"white\">"+rs.getString("cashin_type")+"</td>");
+            out.print("<td><font color=\"white\">"+rs.getString("cashin_person")+"</td>");
+            out.print("<td><font color=\"white\">"+rs.getString("cashin_date")+"</td>");
+            out.print("<td><font color=\"white\">"+rs.getString("cashin_source")+"</td>");
+            out.print("<td><font color=\"white\">"+rs.getString("cashin_note")+"</td>");
             out.print("<td>"+"<a role=\"button\" href=\""+request.getContextPath()+"/EditCashInData.jsp?data_id="+
                     rs.getInt("cashin_id")+
                     "\" class=\"glyphicon glyphicon-pencil btn btn-primary\">编辑</a>&nbsp;" +

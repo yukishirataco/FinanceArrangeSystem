@@ -4,16 +4,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title></title>
 </head>
-<body>
+<body text="white">
 <style>
     body {
-        background-color: #dce2de;
+        background-color: #494a5f;
+        color: white;
     }
 </style>
 <table border="1" cellspacing="0" width="80%" align="center" class="table table-hover">
@@ -36,12 +37,12 @@
     <c:if test="${shareownedinfos!=null }">
         <c:forEach items="${shareownedinfos }" var="item">
             <tr>
-                <td>${item.shareowned_id }</td>
-                <td>${item.shareowned_no }</td>
-                <td>${item.shareowned_name }</td>
-                <td>${item.shareowned_begin }</td>
-                <td>${item.shareowned_end }</td>
-                <td>${item.shareowned_amount }</td>
+                <td><font color="white">${item.shareowned_id }</font></td>
+                <td><font color="white">${item.shareowned_no }</font></td>
+                <td><font color="white">${item.shareowned_name }</font></td>
+                <td><font color="white">${item.shareowned_begin }</font></td>
+                <td><font color="white">${item.shareowned_end }</font></td>
+                <td><font color="white">${item.shareowned_amount }</font></td>
             </tr>
         </c:forEach>
     </c:if>

@@ -74,10 +74,11 @@
         }
     </script>
 </head>
-<body>
+<body text="white">
 <style>
     body {
-        background-color: #dce2de;
+        background-color: #494a5f;
+        color: white;
     }
 </style>
 <center><h1>添加账户</h1></center>

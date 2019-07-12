@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <title>支出信息管理</title>
 </head>
-<body>
+<body text="white">
 <script src="js/jquery.min.js"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <script src="js/bootstrap.min.js"></script>
@@ -18,7 +18,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
     body {
-        background-color: #dce2de;
+        background-color: #494a5f;
+        color: white;
     }
 </style>
 <script>
@@ -75,13 +76,13 @@
         ResultSet rs =pstmt.executeQuery();
         while(rs.next()){
             out.print("<tr>");
-            out.print("<td>"+rs.getInt("cashout_id")+"</td>");
-            out.print("<td>"+rs.getInt("cashout_cash")+"</td>");
-            out.print("<td>"+rs.getString("cashout_type")+"</td>");
-            out.print("<td>"+rs.getString("cashout_person")+"</td>");
-            out.print("<td>"+rs.getString("cashout_date")+"</td>");
-            out.print("<td>"+rs.getString("cashout_source")+"</td>");
-            out.print("<td>"+rs.getString("cashout_note")+"</td>");
+            out.print("<td><font color=\"white\">"+rs.getInt("cashout_id")+"</font></font></td>");
+            out.print("<td><font color=\"white\">"+rs.getInt("cashout_cash")+"</font></font></td>");
+            out.print("<td><font color=\"white\">"+rs.getString("cashout_type")+"</font></font></td>");
+            out.print("<td><font color=\"white\">"+rs.getString("cashout_person")+"</font></font></td>");
+            out.print("<td><font color=\"white\">"+rs.getString("cashout_date")+"</font></font></td>");
+            out.print("<td><font color=\"white\">"+rs.getString("cashout_source")+"</font></font></td>");
+            out.print("<td><font color=\"white\">"+rs.getString("cashout_note")+"</font></font></td>");
             out.print("<td>"+"<a role=\"button\" href=\""+request.getContextPath()+"/EditCashOutData.jsp?data_id="+
                     rs.getInt("cashout_id")+
                     "\" class=\"glyphicon glyphicon-pencil btn btn-primary\">编辑</a>&nbsp;" +

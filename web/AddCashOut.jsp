@@ -24,6 +24,7 @@
     html,
     body {
         height: 100%;
+        color: white;
     }
 
     body {
@@ -32,7 +33,6 @@
         align-items: center;
         padding-top: 15px;
         padding-bottom: 15px;
-        background-color: #dce2de;
         margin-right: 240px;
         margin-left: 240px;
     }
@@ -98,7 +98,7 @@
     }
 </script>
 
-<body>
+<body text="white">
 <div id="input-cashoutform" class="justify-content-center">
     <form id="add-cashout" class="add-cashout" method="POST" action="AddCashOutServlet">
         <label for="cashoutmoney">支出金额：</label>

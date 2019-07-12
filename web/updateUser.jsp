@@ -10,11 +10,12 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.min.js"></script>
 </head>
-<body>
+<body text="white">
 <center>
     <style>
         body {
-            background-color: #dce2de;
+            background-color: #494a5f;
+            color: white;
         }
     </style>
     <form action="${pageContext.request.contextPath }/AdminUpdateUserServlet" method="post">

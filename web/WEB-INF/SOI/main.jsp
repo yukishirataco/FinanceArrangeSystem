@@ -5,9 +5,9 @@
 <html>
 <head>
     <script type="text/javascript" src="${pageContext.request.contextPath }/js/del.js"></script>
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
+    <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
+    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Insert title here</title>
     <script>
@@ -19,10 +19,11 @@
         }
     </script>
 </head>
-<body>
+<body text="white">
 <style>
     body {
-        background-color: #dce2de;
+        background-color: #494a5f;
+        color: white;
     }
 </style>
 <form>
@@ -54,12 +55,12 @@
         <c:if test="${SOIs!=null }">
             <c:forEach items="${SOIs }" var="item">
                 <tr>
-                    <td>${item.shareowned_id }</td>
-                    <td>${item.shareowned_no }</td>
-                    <td>${item.shareowned_name }</td>
-                    <td>${item.shareowned_begin }</td>
-                    <td>${item.shareowned_end }</td>
-                    <td>${item.shareowned_amount }</td>
+                    <td><font color="white">${item.shareowned_id }</font></td>
+                    <td><font color="white">${item.shareowned_no }</font></td>
+                    <td><font color="white">${item.shareowned_name }</font></td>
+                    <td><font color="white">${item.shareowned_begin }</font></td>
+                    <td><font color="white">${item.shareowned_end }</font></td>
+                    <td><font color="white">${item.shareowned_amount }</font></td>
                     <td>
                         <a role="button" class="btn btn-success"
                            href="${pageContext.request.contextPath }/GetSOIByidno?shareowned_id=${item.shareowned_id}&shareowned_no=${item.shareowned_no}">修改</a>

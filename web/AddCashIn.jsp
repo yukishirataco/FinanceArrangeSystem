@@ -24,7 +24,8 @@
     html,
     body {
         height: 100%;
-        background-color: #dce2de;
+        color: white;
+        background-color: #494a5f;
     }
 
     body {
@@ -33,7 +34,6 @@
         align-items: center;
         padding-top: 15px;
         padding-bottom: 15px;
-        background-color: #f5f5f5;
         margin-right: 240px;
         margin-left: 240px;
     }
@@ -99,7 +99,7 @@
     }
 </script>
 
-<body>
+<body text="white">
 <div id="input-cashinform" class="justify-content-center">
     <form id="add-cashin" class="add-cashin" method="POST" action="AddCashInServlet">
         <label for="cashinmoney">收入金额：</label>

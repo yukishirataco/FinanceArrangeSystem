@@ -12,10 +12,11 @@
     <meta charset="UTF-8">
 
 </head>
-<body>
+<body text="white">
 <style>
     body {
-        background-color: #dce2de;
+        background-color: #494a5f;
+        color: white;
     }
 </style>
 <center><h1>查询信息结果</h1></center>
@@ -36,11 +37,11 @@
     </c:if>
     <c:if test="${user!=null }">
         <tr>
-            <td>${user.id }</td>
-            <td>${user.card }</td>
-            <td>${user.wage }</td>
-            <td>${user.call }</td>
-            <td>${user.age }</td>
+            <td><font color="white">${user.id }</font></td>
+            <td><font color="white">${user.card }</font></td>
+            <td><font color="white">${user.wage }</font></td>
+            <td><font color="white">${user.call }</font></td>
+            <td><font color="white">${user.age }</font></td>
         </tr>
     </c:if>
     <tr>

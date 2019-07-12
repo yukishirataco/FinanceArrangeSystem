@@ -24,7 +24,8 @@
     html,
     body {
         height: 100%;
-        background-color: #dce2de;
+        background-color: #494a5f;
+        color: white;
     }
 
     body {
@@ -33,7 +34,6 @@
         align-items: center;
         padding-top: 15px;
         padding-bottom: 15px;
-        background-color: #f5f5f5;
         margin-right: 240px;
         margin-left: 240px;
         overflow-y: auto;
@@ -146,7 +146,7 @@
         document.getElementById('cashinsource').value = '';
     }
 </script>
-<body>
+<body text="white">
 <div id="input-cashinform" class="justify-content-center">
     <form id="edit-cashin" class="edit-cashin" method="POST" action="EditCashInServlet">
         <label for="cashinid">收入编号：</label>

@@ -29,14 +29,13 @@
     <!--<link rel="icon" href="Favicon.png"> -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <title>家庭财务管理系统</title>
 </head>
 <body>
 <style>
     body {
         background-color: #e1e1e1;
+
     }
 </style>
 

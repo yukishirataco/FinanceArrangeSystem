@@ -9,10 +9,11 @@
     <meta charset="UTF-8">
     <title>Insert title here</title>
 </head>
-<body>
+<body text="white">
 <style>
     body {
-        background-color: #dce2de;
+        background-color: #494a5f;
+        color: white;
     }
 </style>
 <h1>信息查询结果</h1>
@@ -28,11 +29,11 @@
     </tr>
     </thead>
     <tr>
-        <td>${shareaccount.shareaccount_id }</td>
-        <td>${shareaccount.shareaccount_pwd }</td>
-        <td>${shareaccount.shareaccount_num }</td>
-        <td>${shareaccount.shareaccount_card }</td>
-        <td>${shareaccount.shareaccount_company }</td>
+        <td><font color="white">${shareaccount.shareaccount_id }</font></td>
+        <td><font color="white">${shareaccount.shareaccount_pwd }</font></td>
+        <td><font color="white">${shareaccount.shareaccount_num }</font></td>
+        <td><font color="white">${shareaccount.shareaccount_card }</font></td>
+        <td><font color="white">${shareaccount.shareaccount_company }</font></td>
     </tr>
 </table>
 </body>

@@ -56,6 +56,10 @@
         document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="${pageContext.request.contextPath}/admin_welcome.jsp" width="100%" height="100%"></object>';
     }
 
+    function query_cashout_info() {
+        document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="${pageContext.request.contextPath}/query_cashout.jsp" width="100%" height="100%"></object>';
+    }
+
 </script>
 <style>
     .innerView {
@@ -96,6 +100,18 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#" onclick="load_query()">收入记录</a>
+                    <%-- <a class="dropdown-item" href="#" onclick="load_add()">增加收入记录</a> --%>
+                </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink3" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    支出管理
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#" onclick="query_cashout_info()">支出记录</a>
                     <%-- <a class="dropdown-item" href="#" onclick="load_add()">增加收入记录</a> --%>
                 </div>
             </li>

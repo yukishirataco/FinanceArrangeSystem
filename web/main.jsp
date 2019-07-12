@@ -20,11 +20,12 @@
     </script>
     <style>
         body {
-            background-color: #dce2de;
+            color: white;
+            background-color: #494a5f;
         }
     </style>
 </head>
-<body>
+<body text="white">
 <center>
     <center><h1>用户信息管理系统</h1>
         <form action="${pageContext.request.contextPath }/AdminGetUserByIdServlet2" method="post">
@@ -54,12 +55,12 @@
         <c:if test="${users!=null }">
             <c:forEach items="${users }" var="item">
                 <tr>
-                    <td>${item.id }</td>
-                    <td>${item.password }</td>
-                    <td>${item.card }</td>
-                    <td>${item.wage }</td>
-                    <td>${item.call }</td>
-                    <td>${item.age }</td>
+                    <td><font color="white">${item.id }</font></td>
+                    <td><font color="white">${item.password }</font></td>
+                    <td><font color="white">${item.card }</font></td>
+                    <td><font color="white">${item.wage }</font></td>
+                    <td><font color="white">${item.call }</font></td>
+                    <td><font color="white">${item.age }</font></td>
                     <td>
                         <a class="btn btn-primary"
                            href="${pageContext.request.contextPath }/AdminGetUserByIdServlet?id=${item.id}">修改</a>

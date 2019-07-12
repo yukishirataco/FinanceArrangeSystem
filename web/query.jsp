@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <title>查询信息</title>
 </head>
-<body>
+<body text="white">
 <center>
     <h1>查询信息</h1>
     <form action="${pageContext.request.contextPath }/GetSSIbySSI_idServlet" method="post">

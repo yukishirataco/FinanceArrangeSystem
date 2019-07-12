@@ -7,9 +7,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>证券账户信息</title>
     <script type="text/javascript" src="${pageContext.request.contextPath }/js/del.js"></script>
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
+    <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
+    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 </head>
 <meta charset="UTF-8">
 <title>证券账户信息</title>
@@ -18,10 +18,11 @@
     body {
         height: 100%;
         overflow: auto;
-        background-color: #dce2de;
+        background-color: #494a5f;
+        color: white;
     }
 </style>
-<body>
+<body text="white">
 <form>
     <center><h1>证券账户信息</h1>
     </center>
@@ -44,11 +45,11 @@
         <c:if test="${shares!=null }">
             <c:forEach items="${shares }" var="item">
                 <tr>
-                    <td>${item.shareaccount_id }</td>
-                    <td>${item.shareaccount_pwd }</td>
-                    <td>${item.shareaccount_num }</td>
-                    <td>${item.shareaccount_card }</td>
-                    <td>${item.shareaccount_company }</td>
+                    <td><font color="white">${item.shareaccount_id }</font></td>
+                    <td><font color="white">${item.shareaccount_pwd }</font></td>
+                    <td><font color="white">${item.shareaccount_num }</font></td>
+                    <td><font color="white">${item.shareaccount_card }</font></td>
+                    <td><font color="white">${item.shareaccount_company }</font></td>
                     <td>
                         <a class="btn btn-success" role="button"
                            href="${pageContext.request.contextPath }/GetSharebyIdServlet?shareaccount_id=${item.shareaccount_id}">修改</a>

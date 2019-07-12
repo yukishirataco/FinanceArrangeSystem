@@ -6,7 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/js/constraint.js"></script>
@@ -36,7 +35,7 @@
 <body>
 <style>
     body {
-        background-color: #dce2de;
+        background-color: #e1e1e1;
     }
 </style>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
