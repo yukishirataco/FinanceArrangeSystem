@@ -6,7 +6,7 @@
 <body>
 <%
     session.invalidate();
-    response.sendRedirect("user_login.jsp");
+    response.sendRedirect("login.jsp");
 %>
 </body>
 </html>

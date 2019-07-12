@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 @WebServlet("/UserLoginServlet")
 public class UserLoginServlet extends HttpServlet {
@@ -28,7 +29,7 @@ public class UserLoginServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         String id = request.getParameter("id");
         String password = request.getParameter("password");
-
+        PrintWriter out = response.getWriter();
         UserDao userdao = new UserDaoImpl();
         boolean result = userdao.userLogin(id, password);
 
@@ -37,7 +38,9 @@ public class UserLoginServlet extends HttpServlet {
             session.setAttribute("id", id);
             request.getRequestDispatcher("index.jsp").forward(request, response);
         } else {
-            response.sendRedirect("user_login.jsp");
+            out.println("<script>");
+            out.println("alert(\"您输入的密码不正确或者该用户不存在！\"");
+            response.sendRedirect("login.jsp");
         }
     }
 

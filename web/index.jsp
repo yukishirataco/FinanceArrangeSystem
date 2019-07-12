@@ -52,6 +52,10 @@
         document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="${pageContext.request.contextPath}/AdminGetAllUsersServlet" width="100%" height="100%"></object>';
     }
 
+    function load() {
+        document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="${pageContext.request.contextPath}/admin_welcome.jsp" width="100%" height="100%"></object>';
+    }
+
 </script>
 <style>
     .innerView {
@@ -65,7 +69,7 @@
 </style>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">家庭财务管理系统</a>
+    <a class="navbar-brand" href="#" onclick="load()">家庭财务管理系统</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

@@ -35,14 +35,14 @@ public class UserRegisterServlet extends HttpServlet {
         UserDao ud = new UserDaoImpl();
         int result = ud.userRegister(id, password, card, wage, call, age);
 
-        //ʹ������ת��
+        //??????????
         if (result == 1) {
-            request.setAttribute("message", "ע��ɹ������¼");
-            //ͨ��getRequestDispatcher����·��������ת����login.jsp
-            request.getRequestDispatcher("user_login.jsp").forward(request, response);
+            request.setAttribute("message", "???????????");
+            //???getRequestDispatcher????·?????????????login.jsp
+            request.getRequestDispatcher("login.jsp").forward(request, response);
         } else {
-            request.setAttribute("message", "ע��ʧ�ܣ��û����ظ�");
-            //ͨ��getRequestDispatcher����·��������ת����login.jsp
+            request.setAttribute("message", "???????????????");
+            //???getRequestDispatcher????·?????????????login.jsp
             request.getRequestDispatcher("user_register.jsp").forward(request, response);
         }
 
