@@ -12,6 +12,11 @@
 </head>
 <body>
 <center>
+    <style>
+        body {
+            background-color: #dce2de;
+        }
+    </style>
     <form action="${pageContext.request.contextPath }/AdminUpdateUserServlet" method="post">
         <h1>修改用户信息</h1>
         用户账号:<input class="form-control" type="text" name="id" value="${user.id }"><br/>

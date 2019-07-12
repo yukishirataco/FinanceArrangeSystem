@@ -11,6 +11,11 @@
     <title></title>
 </head>
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <table border="1" cellspacing="0" width="80%" align="center" class="table table-hover">
     <caption>信息查询结果</caption>
     <thead class="thead-dark">

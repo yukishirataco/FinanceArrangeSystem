@@ -4,13 +4,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
     <title>查询结果</title>
 </head>
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <center><h1>查询结果</h1></center>
 <table border="1" cellspacing="0" width="80%" align="center" class="table table-hover">
     <thead class="thead-dark">

@@ -12,6 +12,11 @@
     <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <center>
     <form action="${pageContext.request.contextPath }/UpdateSSIServlet" method="post">
         <h1 class="center">修改信息</h1>

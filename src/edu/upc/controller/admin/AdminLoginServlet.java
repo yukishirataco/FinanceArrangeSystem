@@ -35,7 +35,7 @@ public class AdminLoginServlet extends HttpServlet {
         if (result == true) {
             HttpSession session = request.getSession();
             session.setAttribute("id", id);
-            request.getRequestDispatcher("index.jsp").forward(request, response);
+            request.getRequestDispatcher("index_admin.jsp").forward(request, response);
         } else {
             response.sendRedirect("admin_login.jsp");
         }

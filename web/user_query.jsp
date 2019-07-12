@@ -13,6 +13,11 @@
 
 </head>
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <center><h1>查询信息结果</h1></center>
 <table border="1" cellspacing="0" width="80%" align="center" class="table table-hover">
     <thead class="thead-dark">

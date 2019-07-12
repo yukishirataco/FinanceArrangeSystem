@@ -12,6 +12,11 @@
     <script type="text/javascript" src="${pageContext.request.contextPath }/js/del.js"></script>
 </head>
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <form>
     <center><h1>证券流水账信息表</h1>
         <%/*账号:<input type="text" name="sharestream_id"><br/>

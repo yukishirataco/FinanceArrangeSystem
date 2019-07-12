@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -48,12 +48,9 @@
         document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="${pageContext.request.contextPath}/UserGetUserByIdServlet2?id=${name}" width="100%" height="100%"></object>';
     }
 
-    function query_user_management() {
-        document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="${pageContext.request.contextPath}/AdminGetAllUsersServlet" width="100%" height="100%"></object>';
-    }
 
     function load() {
-        document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="${pageContext.request.contextPath}/admin_welcome.jsp" width="100%" height="100%"></object>';
+        document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="${pageContext.request.contextPath}/user_welcome.jsp" width="100%" height="100%"></object>';
     }
 
 </script>
@@ -68,7 +65,7 @@
     }
 </style>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="#" onclick="load()">家庭财务管理系统</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,7 +74,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     证券流水账管理
                 </a>
@@ -90,7 +87,7 @@
         </ul>
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button"
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink2" role="button"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     收入管理
                 </a>
@@ -105,7 +102,7 @@
     <form class="form-inline my-2 my-lg-0">
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuUser" role="button"
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuUser" role="button"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     用户&nbsp;<%
                     out.println(name);
@@ -116,7 +113,6 @@
                     <%-- <a class="dropdown-item" href="#" onclick="load_add()">增加收入记录</a> --%>
                     <a class="dropdown-item" href="#" onclick="load_user_passwd()">修改密码</a>
                     <a class="dropdown-item" href="#" onclick="edit_user_info()">修改用户信息</a>
-                    <a class="dropdown-item" href="#" onclick="query_user_management()">管理用户信息</a>
                 </div>
             </li>
         </ul>
@@ -124,7 +120,7 @@
     </form>
 </nav>
 <div id="viewDiv" class="innerView">
-    <object type="text/html" data="${pageContext.request.contextPath}/admin_welcome.jsp"
+    <object type="text/html" data="${pageContext.request.contextPath}/user_welcome.jsp"
             style="width:100%;height:100%"></object>
 </div>
 </body>

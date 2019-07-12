@@ -6,7 +6,12 @@
 
 </head>
 
-
+<body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <center>
     <h1>用户主页</h1>
     <p>
@@ -32,4 +37,5 @@
         <a href="invalidate.jsp">注销账号</a>
     <p/>
 </center>
+</body>
 </html>

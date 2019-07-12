@@ -4,9 +4,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
     <title>添加账户</title>
     <script>
@@ -75,6 +75,11 @@
     </script>
 </head>
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <center><h1>添加账户</h1></center>
 <form action="${pageContext.request.contextPath }/InsertShareServlet" method="post">
     <table align="center">

@@ -18,12 +18,16 @@
 
         }
     </script>
+    <style>
+        body {
+            background-color: #dce2de;
+        }
+    </style>
 </head>
 <body>
 <center>
-
     <center><h1>用户信息管理系统</h1>
-        <form action="${pageContext.request.contextPath }/AdminGetUserByIdServlet" method="post">
+        <form action="${pageContext.request.contextPath }/AdminGetUserByIdServlet2" method="post">
             用户ID:<input class="form-control" type="text" name="id"><br/>
             <input class="btn btn-primary" type="submit" value="查询">
             <input class="btn btn-primary" type="button" value="添加"

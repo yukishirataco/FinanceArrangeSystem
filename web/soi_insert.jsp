@@ -67,6 +67,11 @@
     </script>
 </head>
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <form action="${pageContext.request.contextPath }/InsertSOIServlet" method="post">
     <center>
         账号：<input class="form-control" type="text" name="shareowned_id" id="u" onblur="ma()"/><span id="d1"></span><br/>

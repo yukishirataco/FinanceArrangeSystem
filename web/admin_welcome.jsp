@@ -4,6 +4,11 @@
 <html>
 <meta charset="UTF-8">
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <center>
     <p>
         欢迎

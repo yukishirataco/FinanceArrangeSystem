@@ -10,6 +10,11 @@
     <title>Insert title here</title>
 </head>
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <h1>信息查询结果</h1>
 <br><br>
 <table border="1" cellspacing="0" width="80%" align="center" class="table table-hover">

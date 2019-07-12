@@ -11,6 +11,11 @@
     <title>Insert title here</title>
 </head>
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <form action="${pageContext.request.contextPath }/UpdateSOIServlet" method="post">
     <center><h1>修改信息</h1>
         账号:<input type="text" class="form-control" name="shareowned_id" value="${ shareownedinfo.shareowned_id }"><br/>

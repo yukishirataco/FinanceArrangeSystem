@@ -11,6 +11,11 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <center>
     <h1>注册新用户</h1>
     <%

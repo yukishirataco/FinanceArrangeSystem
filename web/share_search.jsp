@@ -11,6 +11,11 @@
     <title>查询账户</title>
 </head>
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <form action="${pageContext.request.contextPath }/GetSharebyIdServlet2" method="post">
     <center><label for="shareaccount_id">查询账户</label></center>
     <center>账号:<input class="form-control" type="text" id="shareaccount_id" name="shareaccount_id"><br/><br/>

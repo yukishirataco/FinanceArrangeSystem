@@ -11,6 +11,11 @@
     <title>Insert title here</title>
 </head>
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <form action="${pageContext.request.contextPath }/AdminInsertUserServlet" method="post">
     用户ID:<input class="form-control" type="text" name="id"><br/>
     用户密码：<input class="form-control" type="password" name="password"><br/>

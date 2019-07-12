@@ -18,6 +18,7 @@
     body {
         height: 100%;
         overflow: auto;
+        background-color: #dce2de;
     }
 </style>
 <body>

@@ -9,7 +9,7 @@
 <html>
 
 <head>
-    <title>添加收入记录</title>
+    <title>添加支出记录</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <%-- 引入Bootstrap --%>
@@ -24,7 +24,6 @@
     html,
     body {
         height: 100%;
-        background-color: #dce2de;
     }
 
     body {
@@ -33,12 +32,12 @@
         align-items: center;
         padding-top: 15px;
         padding-bottom: 15px;
-        background-color: #f5f5f5;
+        background-color: #dce2de;
         margin-right: 240px;
         margin-left: 240px;
     }
 
-    .add-cashin {
+    .add-cashout {
         width: 100%;
         padding: 15px;
         align-items: center;
@@ -50,25 +49,25 @@
 </style>
 <script>
     $().ready(function () {
-        $("#add-cashin").validate({
+        $("#add-cashout").validate({
             rules: {
-                "cashin-money": {
+                "cashout-money": {
                     required: true,
                     number: true,
                     min: 0,
                     max: 2147483646
                 },
-                "cashin-type": {
+                "cashout-type": {
                     required: true
                 },
-                "cashin-person": {
+                "cashout-person": {
                     required: true
                 },
-                "cashin-date": {
+                "cashout-date": {
                     required: true,
                     number: true
                 },
-                "cashin-source": {
+                "cashout-source": {
                     required: true
                 }
             }
@@ -76,12 +75,12 @@
     });
 
     function clearForm() {
-        document.getElementById('cashintype').value = '';
-        document.getElementById('cashinmoney').value = '';
-        document.getElementById('cashinperson').value = '';
-        document.getElementById('cashindate').value = '';
-        document.getElementById('cashinnote').value = '';
-        document.getElementById('cashinsource').value = '';
+        document.getElementById('cashouttype').value = '';
+        document.getElementById('cashoutmoney').value = '';
+        document.getElementById('cashoutperson').value = '';
+        document.getElementById('cashoutdate').value = '';
+        document.getElementById('cashoutnote').value = '';
+        document.getElementById('cashoutsource').value = '';
     }
 
     function getContextPath() {
@@ -95,31 +94,31 @@
 
     //alert(contextPath);
     function returnToHomepage() {
-        location.href = contextPath + "/QueryCashIn.jsp";
+        location.href = contextPath + "/query_cashout.jsp";
     }
 </script>
 
 <body>
-<div id="input-cashinform" class="justify-content-center">
-    <form id="add-cashin" class="add-cashin" method="POST" action="AddCashInServlet">
-        <label for="cashinmoney">收入金额：</label>
-        <input type="text" class="form-control" id="cashinmoney" name="cashin-money"><br>
-        <label for="cashintype">收入类型：</label>
-        <select id="cashintype" class="form-control" name="cashin-type">
-            <option value="">请选择收入类型</option>
-            <option value="工资">工资</option>
-            <option value="股票">股票</option>
-            <option value="分红">分红</option>
-            <option value="奖金">奖金</option>
+<div id="input-cashoutform" class="justify-content-center">
+    <form id="add-cashout" class="add-cashout" method="POST" action="AddCashOutServlet">
+        <label for="cashoutmoney">支出金额：</label>
+        <input type="text" class="form-control" id="cashoutmoney" name="cashout-money"><br>
+        <label for="cashouttype">支出类型：</label>
+        <select id="cashouttype" class="form-control" name="cashout-type">
+            <option value="">请选择支出类型</option>
+            <option value="税收">税收</option>
+            <option value="衣食住行">股票</option>
+            <option value="医疗">医疗</option>
+            <option value="其他">其他</option>
         </select><br>
-        <label for="cashinperson">收入者：</label>
-        <input type="text" class="form-control" id="cashinperson" name="cashin-person"><br>
-        <label for="cashindate">收入日期(格式如 20190705)：</label>
-        <input type="text" class="form-control" id="cashindate" name="cashin-date"><br>
-        <label for="cashinsource">收入来源：</label>
-        <input type="text" class="form-control" id="cashinsource" name="cashin-source"><br>
-        <label for="cashinnote">相关备注：</label>
-        <textarea class="form-control" id="cashinnote" name="cashin-note" rows=3></textarea><br>
+        <label for="cashoutperson">支出者：</label>
+        <input type="text" class="form-control" id="cashoutperson" name="cashout-person"><br>
+        <label for="cashoutdate">支出日期(格式如 20190705)：</label>
+        <input type="text" class="form-control" id="cashoutdate" name="cashout-date"><br>
+        <label for="cashoutsource">支出用途：</label>
+        <input type="text" class="form-control" id="cashoutsource" name="cashout-source"><br>
+        <label for="cashoutnote">相关备注：</label>
+        <textarea class="form-control" id="cashoutnote" name="cashout-note" rows=3></textarea><br>
         <div class="d-flex justify-content-between">
             <button class="btn btn-lg btn-primary" type="button" onclick="returnToHomepage()">返回</button>
             <button class="btn btn-lg btn-primary" type="submit">提交</button>

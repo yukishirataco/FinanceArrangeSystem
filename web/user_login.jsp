@@ -34,8 +34,13 @@
     <title>家庭财务管理系统</title>
 </head>
 <body>
+<style>
+    body {
+        background-color: #e1e1e1;
+    }
+</style>
 
-<nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="#">家庭财务管理系统</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -91,9 +96,11 @@
                                    class="btn btn-link">
                                     注册？
                                 </a>
-                                <!--   <button type="button" onclick="location.href='${pageContext.request.contextPath}/admin_login.jsp'" class="btn btn-primary">
+                                <button type="button"
+                                        onclick="location.href='${pageContext.request.contextPath}/admin_login.jsp'"
+                                        class="btn btn-primary">
                                     管理员登录
-                                </button> -->
+                                </button>
                             </div>
                     </div>
                     </form>

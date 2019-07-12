@@ -11,6 +11,11 @@
     <script src="${pageContext.request.contextPath }/js/constraint.js"></script>
 </head>
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <center>
     <form action="${pageContext.request.contextPath }/InsertSSIServlet" method="post">
         <center><h1>添加信息</h1></center>

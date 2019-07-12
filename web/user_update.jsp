@@ -12,6 +12,11 @@
     <script type="text/javascript" src="${pageContext.request.contextPath }/js/constraint.js"></script>
 </head>
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <center>
     <form action="${pageContext.request.contextPath }/UserUpdateInfoServlet" method="post">
         <h1>修改用户密码</h1>

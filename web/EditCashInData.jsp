@@ -24,6 +24,7 @@
     html,
     body {
         height: 100%;
+        background-color: #dce2de;
     }
 
     body {

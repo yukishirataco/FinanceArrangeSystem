@@ -36,11 +36,11 @@ public class UserLoginServlet extends HttpServlet {
         if (result == true) {
             HttpSession session = request.getSession();
             session.setAttribute("id", id);
-            request.getRequestDispatcher("index.jsp").forward(request, response);
+            request.getRequestDispatcher("index_user.jsp").forward(request, response);
         } else {
             out.println("<script>");
             out.println("alert(\"您输入的密码不正确或者该用户不存在！\"");
-            response.sendRedirect("login.jsp");
+            response.sendRedirect("user_login.jsp");
         }
     }
 

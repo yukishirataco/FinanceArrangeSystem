@@ -10,6 +10,11 @@
     <title>查找账号</title>
 </head>
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <form action="${pageContext.request.contextPath }/GetSOIbySOI_idServlet" method="post">
     账号:<input class="form-control" type="text" name="shareowned_id"><br/>
 

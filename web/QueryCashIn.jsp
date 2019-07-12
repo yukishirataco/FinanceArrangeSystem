@@ -46,6 +46,11 @@
 
 </script>
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <br>
 <div class="d-flex justify-content-between">
     <button type="button" class="btn btn-primary glyphicon glyphicon-refresh" onclick="location.reload()">刷新</button>

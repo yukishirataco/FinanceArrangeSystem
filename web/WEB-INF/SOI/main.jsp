@@ -20,6 +20,11 @@
     </script>
 </head>
 <body>
+<style>
+    body {
+        background-color: #dce2de;
+    }
+</style>
 <form>
     <center><h1>持股信息表</h1>
 
