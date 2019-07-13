@@ -60,6 +60,21 @@
         document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="${pageContext.request.contextPath}/query_cashout.jsp" width="100%" height="100%"></object>';
     }
 
+    function chart_date_info() {
+        document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="${pageContext.request.contextPath}/chart_searchbydate.jsp" width="100%" height="100%"></object>';
+    }
+
+    function chart_cashin_type() {
+        document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="${pageContext.request.contextPath}/chart_searchintype.jsp" width="100%" height="100%"></object>';
+    }
+
+    function chart_cashout_type() {
+        document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="${pageContext.request.contextPath}/chart_searchouttype.jsp" width="100%" height="100%"></object>';
+    }
+
+    function chart_query_chart() {
+        document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="${pageContext.request.contextPath}/chart_output.jsp" width="100%" height="100%"></object>';
+    }
 </script>
 <style>
     .innerView {
@@ -113,6 +128,20 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#" onclick="query_cashout_info()">支出记录</a>
                     <%-- <a class="dropdown-item" href="#" onclick="load_add()">增加收入记录</a> --%>
+                </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink4" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    报表管理
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#" onclick="chart_date_info()">按时间查询</a>
+                    <a class="dropdown-item" href="#" onclick="chart_cashin_type()">按类型查询收入记录</a>
+                    <a class="dropdown-item" href="#" onclick="chart_cashout_type()">按类型查询支出记录</a>
+                    <a class="dropdown-item" href="#" onclick="chart_query_chart()">查看报表</a>
                 </div>
             </li>
         </ul>

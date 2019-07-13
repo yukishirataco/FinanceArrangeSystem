@@ -25,6 +25,7 @@
     body {
         height: 100%;
         color: white;
+        background-color: #494a5f;
     }
 
     body {
