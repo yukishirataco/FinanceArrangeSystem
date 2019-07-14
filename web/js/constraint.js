@@ -10,6 +10,18 @@ function ma() {
 
 }
 
+function mo() {
+    var pwd1 = document.forms[0].password.value;
+    var pwd2 = document.forms[0].repassword.value;
+    if (pwd1 != pwd2) {
+        alert("请输入一致的密码！");
+        return false;
+    } else {
+        alert("修改密码成功！");
+        return true;
+    }
+}
+
 function ma2() {
     //方式一
     var sharestream_no = document.forms[0].sharestream_no.value;

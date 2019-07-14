@@ -29,10 +29,10 @@
         </h2>
         <form method="get" action="GetCashOutByType">
             <select id="otype" name="type" required>
-                <option value="税收">工资</option>
-                <option value="衣食住行">股票</option>
-                <option value="医疗">分红</option>
-                <option value="其他 ">奖金</option>
+                <option value="税收">税收</option>
+                <option value="衣食住行">衣食住行</option>
+                <option value="医疗">医疗</option>
+                <option value="其他">其他</option>
             </select>
             <br><br>
             <button type="submit" class="btn btn-primary">查找</button>

@@ -16,6 +16,9 @@
 <script src="js/bootstrap.min.js"></script>
 <link href="css/glyphfonts.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+<link rel="stylesheet" type="text/css" href="css/htmleaf-demo2.css">
+<link rel="stylesheet" href="css/style2.css">
 <style>
     body {
         background-color: #494a5f;
@@ -33,9 +36,9 @@
     }
 </script>
 <center>
-    <h2>
+    <h1>
         按照日期进行查询
-    </h2>
+    </h1>
 </center>
 <center>
     <form action="SearchCashByDate" method="get" id="search-date">
@@ -84,6 +87,7 @@
             </select>
             <br><br>
             <button type="submit" class="btn btn-primary">查找</button>
+
         </form>
     </div>
 </center>
