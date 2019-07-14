@@ -76,7 +76,7 @@
     <tbody>
         <%
     try{
-        com.yukishira.cashin.queueSQLDatabase test = new com.yukishira.cashin.queueSQLDatabase("familyfinancesystem","homeman","123456");
+        com.yukishira.cashin.queueSQLDatabase test = new com.yukishira.cashin.queueSQLDatabase("familyfinancesystem","root","");
         Connection conn = test.connect();
         PreparedStatement pstmt;
         String sql = "SELECT * FROM homedb";
