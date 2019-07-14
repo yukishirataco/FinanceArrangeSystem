@@ -19,7 +19,7 @@ public class GetCashOutByType extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         //设定字符集，防止乱码
-        queueSQLDatabase test = new queueSQLDatabase("familyfinancesystem", "homeman", "123456");
+        queueSQLDatabase test = new queueSQLDatabase("familyfinancesystem", "root", "");
         Connection conn = test.connect();
         PreparedStatement pstmt;
         PrintWriter out = response.getWriter();

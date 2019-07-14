@@ -18,7 +18,7 @@ public class AddCashOutServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        queueSQLDatabase test = new queueSQLDatabase("familyfinancesystem", "homeman", "123456");
+        queueSQLDatabase test = new queueSQLDatabase("familyfinancesystem", "root", "");
         Connection conn = test.connect();
         PreparedStatement pstmt = null;
         response.setContentType("text/html;charset=UTF-8");

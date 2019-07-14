@@ -24,7 +24,7 @@ public class QueryCashInAPI extends HttpServlet {
         response.setContentType("application/json;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         //Éè¶¨×Ö·û¼¯£¬·ÀÖ¹ÂÒÂë
-        queueSQLDatabase test = new queueSQLDatabase("familyfinancesystem", "homeman", "123456");
+        queueSQLDatabase test = new queueSQLDatabase("familyfinancesystem", "root", "");
         Connection conn = test.connect();
         PreparedStatement pstmt;
         PrintWriter out = response.getWriter();
