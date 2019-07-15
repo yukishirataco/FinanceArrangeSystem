@@ -21,8 +21,8 @@ public class UserRegisterServlet extends HttpServlet {
     public UserRegisterServlet() {
         super();
     }
-
-
+	
+    
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=utf-8");
         request.setCharacterEncoding("UTF-8");
@@ -35,14 +35,14 @@ public class UserRegisterServlet extends HttpServlet {
         UserDao ud = new UserDaoImpl();
         int result = ud.userRegister(id, password, card, wage, call, age);
 
-        //??????????
+        //使用请求转发
         if (result == 1) {
-            request.setAttribute("message", "???????????");
-            //???getRequestDispatcher????·?????????????user_login.jsp
+            request.setAttribute("message", "注册成功，请登录");
+            //通过getRequestDispatcher传递路径将请求转发给login.jsp
             request.getRequestDispatcher("user_login.jsp").forward(request, response);
         } else {
-            request.setAttribute("message", "???????????????");
-            //???getRequestDispatcher????·?????????????user_login.jsp
+            request.setAttribute("message", "注册失败，用户名重复");
+            //通过getRequestDispatcher传递路径将请求转发给login.jsp
             request.getRequestDispatcher("user_register.jsp").forward(request, response);
         }
 
